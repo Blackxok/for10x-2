@@ -1,0 +1,134 @@
+:root {
+  --red: rgb(232, 34, 34);
+  --green: rgb(52, 229, 39);
+  --passive: #dedede;
+  --shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  user-select: none;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  //   border: 3px solid forestgreen;
+}
+
+.big_title {
+  width: 100%;
+  //   border: 3px solid forestgreen;
+}
+
+.row {
+  width: 100%;
+  border: 2px solid var(--passive);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.top_l .fa-list-check {
+  font-size: 50px;
+  margin: 30px 0;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--passive);
+}
+
+.item {
+  flex: 0 1 90%;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+
+.fa-check {
+  flex: 0 1 5%;
+  text-align: end;
+  font-size: 20px;
+  margin: 5px;
+  color: var(--green);
+  cursor: pointer;
+  z-index: 99;
+}
+
+.fa-xmark {
+  flex: 0 1 5%;
+  margin: 5px;
+  font-size: 20px;
+  color: var(--red);
+  cursor: pointer;
+}
+
+.form {
+  p {
+    margin: 10px 0;
+  }
+}
+
+.form input[type="text"],
+.title {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.form input[type="text"] {
+  width: 95%;
+  padding: 3px;
+  border: 0.1px solid var(--passive);
+  border-radius: 5px;
+}
+
+.form input[type="text"]:focus {
+  outline: none;
+}
+
+.form input[type="text"]::placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: var(--passive);
+}
+
+.btn_s {
+}
+
+.add_b {
+  margin: 5px 10px;
+  padding: 5px 20px;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.clear_b {
+  padding: 5px 20px;
+  margin: 5px 10px;
+  color: var(--red);
+  cursor: pointer;
+}

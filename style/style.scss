@@ -30,12 +30,10 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  //   border: 3px solid forestgreen;
 }
 
 .big_title {
   width: 100%;
-  //   border: 3px solid forestgreen;
 }
 
 .row {
@@ -49,7 +47,7 @@
   box-shadow: var(--shadow);
 }
 
-.top_l .fa-list-check {
+.top_l .fa-rectangle-list {
   font-size: 50px;
   margin: 30px 0;
 }
@@ -115,7 +113,6 @@
   text-align: center;
   color: var(--passive);
 }
-
 
 .add_b {
   margin: 5px 10px;

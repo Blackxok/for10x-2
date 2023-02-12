@@ -49,9 +49,11 @@
   box-shadow: var(--shadow);
 }
 
-.top_l .fa-rectangle-list {
+.top_l .fa-file,
+.top_l .fa-file-lines {
   font-size: 50px;
-  margin: 30px 0;
+  margin: 10px 0;
+  color: var(--passive);
 }
 
 .list {
@@ -106,6 +108,8 @@
 
 .form input[type=text]:focus {
   outline: none;
+  border-color: #1092e9;
+  box-shadow: 0 0 5px #1092e9;
 }
 
 .form input[type=text]::-moz-placeholder {

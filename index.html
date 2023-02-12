@@ -15,9 +15,11 @@
 </head>
 
 <body>
-    <div class="todo">
+    <div class="todo" id="todo">
         <div class="container">
+            <!-- title -->
             <h1 class="big_title">This is Your To Do list</h1>
+            <!-- todo list  -->
             <div class="row top_l">
                 <i class="fa-solid fa-rectangle-list"></i>
                 <div class="list">
@@ -31,14 +33,15 @@
                     <i class="fa-solid fa-xmark"></i>
                 </div>
             </div>
-            <div class="row form">
+            <!-- todo form -->
+            <div class="row form" id="form">
                 <div class="title">Add_Mission</div>
-                <input type="text" value="" placeholder="what do you want to do">
+                <input class="form_input" type="text" value="" placeholder="what do you want to do">
                 <p>You can to add what you mast to do</p>
-                <div class="btn_s">
-                    <button class="add_b">Add</button>
-                    <button class="clear_b">Clear</button>
-                </div>
+                <form class="btn_s" id="button_s">
+                    <button type="submit" class="add_b">Add</button>
+                    <button type="button" class="clear_b">Delete</button>
+                </form>
             </div>
         </div>
     </div>

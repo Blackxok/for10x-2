@@ -6,6 +6,8 @@ const list = document.querySelector('.top_l');
 const ico = document.querySelector('#ico');
 const lines_icon = document.querySelector('.lines');
 const file_icon = document.querySelector('.file');
+const chek = document.querySelector('.fa-check');
+
 
 
 // multiple events
@@ -16,15 +18,10 @@ const file_icon = document.querySelector('.file');
         // list length ---------------------------------------
 
         if (list.children.length > 1) {
-            console.log("katta");
             lines_icon.style.display = "block";
             file_icon.style.display = "none";
-        } else {
-            console.log("mayda");
-        }
-        console.log("working");
-        console.log(ico);
-        console.log(list.children.length);
+        };
+
 
 
         // -------------------------------------------
@@ -48,9 +45,7 @@ const file_icon = document.querySelector('.file');
     });
 });
 
-// empty or full list
+// check or delete missions
+chek.addEventListener('click', function (e) {
 
-
-
-
-
+});

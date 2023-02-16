@@ -83,7 +83,7 @@
   text-transform: capitalize;
 }
 
-.fa-check {
+.don {
   flex: 0 1 5%;
   text-align: end;
   font-size: 20px;
@@ -93,8 +93,8 @@
   z-index: 99;
 }
 
-.fa-xmark {
-  flex: 0 1 5%;
+.del {
+  flex: 0 1 15%;
   margin: 5px;
   font-size: 20px;
   color: var(--red);

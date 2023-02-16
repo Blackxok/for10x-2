@@ -16,24 +16,21 @@ const chek = document.querySelector('.fa-check');
         e.preventDefault();
 
         // list length ---------------------------------------
-
-        if (list.children.length > 1) {
+        if (list.children.length > 3) {
             lines_icon.style.display = "block";
             file_icon.style.display = "none";
-        };
-
-
-
+            console.log(list.children);
+        } else if (list.children.length == 3) {
+            lines_icon.style.display = "none";
+            file_icon.style.display = "block";
+        }
         // -------------------------------------------
-
-
-
         const in_text = input.value;
         if (e.keyCode === 13 || e.target.className === 'add_b') {
             list.innerHTML += `<div class="list">
-                <div class="item">${in_text}</div>
-                <i class="fa-solid fa-check"></i>
-                <i class="fa-solid fa-xmark"></i>
+            <div class="item">${in_text}</div>
+            <button class="don" data-action="done">don</button>
+            <button class="del" data-action="delete">del</button>
                 </div>`
             input.value = '';
             input.focus();
@@ -45,7 +42,13 @@ const chek = document.querySelector('.fa-check');
     });
 });
 
-// check or delete missions
-chek.addEventListener('click', function (e) {
 
+// check or delete missions
+list.addEventListener('click', function (e) {
+    if (e.target.dataset.action === 'delete') {
+        const mission = e.target.closest('.list');
+        mission.remove();
+    }
 });
+
+    // /-------------------------------------------------------

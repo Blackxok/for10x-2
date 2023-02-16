@@ -20,7 +20,7 @@ const chek = document.querySelector('.fa-check');
             lines_icon.style.display = "block";
             file_icon.style.display = "none";
             console.log(list.children);
-        } else if (list.children.length == 3) {
+        } else if (list.children.length === 3) {
             lines_icon.style.display = "none";
             file_icon.style.display = "block";
         }

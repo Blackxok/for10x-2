@@ -29,7 +29,7 @@ const chek = document.querySelector('.fa-check');
         if (e.keyCode === 13 || e.target.className === 'add_b') {
             list.innerHTML += `<div class="list">
             <div class="item">${in_text}</div>
-            <button class="don" data-action="done">don</button>
+            <button class="don" data-action="done"></button>
             <button class="del" data-action="delete">del</button>
                 </div>`
             input.value = '';

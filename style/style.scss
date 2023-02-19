@@ -82,21 +82,40 @@
 }
 
 .don {
+    content: url(../images/don.svg);
     flex: 0 1 5%;
     text-align: end;
     font-size: 20px;
     margin: 5px;
     color: var(--green);
     cursor: pointer;
-    z-index: 99;
+    background: transparent;
+    border: none;
 }
 
+.don::after {
+    content: url(../imgs/don.svg);
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
 .del {
     flex: 0 1 15%;
     margin: 5px;
     font-size: 20px;
     color: var(--red);
     cursor: pointer;
+}
+
+.del::after {
+    content: url(../imgs/del.svg);
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 30px;
+    height: 30px;
 }
 
 .form {

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 2000 2000" version="1.1" viewBox="0 0 2000 2000">
+	<circle cx="1047.3" cy="983.73" r="885.66" fill="#006837"/>
+	<linearGradient id="a" x1="1047.3" x2="1047.3" y1="1828.4" y2="133.63" gradientUnits="userSpaceOnUse">
+		<stop stop-color="#009245" offset="0"/>
+		<stop stop-color="#39B54A" offset="1"/>
+	</linearGradient>
+	<circle cx="1047.3" cy="981.02" r="847.38" fill="url(#a)"/>
+		<polygon points="1550 556.27 908.78 1197.5 536.76 825.51 439.24 923.03 811.26 1295 811.26 1295 908.78 1392.6 1647.6 653.79" fill="none" opacity=".5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="28.501"/>
+		<polygon points="1566.3 556.27 925.06 1197.5 553.05 825.51 455.53 923.03 827.55 1295 827.55 1295 925.06 1392.6 1663.8 653.79" fill="none" stroke="#006837" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="28.501"/>
+	<polygon points="1566.3 556.27 925.06 1197.5 553.05 825.51 455.53 923.03 827.55 1295 827.55 1295 925.06 1392.6 1663.8 653.79" fill="#fff"/>
+<circle cx="1047.3" cy="979.73" r="819.19" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="15"/>
+</svg>

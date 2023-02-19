@@ -15,6 +15,7 @@
   line-height: 130%;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 
@@ -126,6 +127,12 @@
 }
 
 .form input[type=text]::-moz-placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: var(--passive);
+}
+
+.form input[type=text]:-ms-input-placeholder {
   font-size: 15px;
   text-align: center;
   color: var(--passive);

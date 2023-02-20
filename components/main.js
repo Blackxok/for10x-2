@@ -9,7 +9,8 @@ const file_icon = document.querySelector('.file');
 const chek = document.querySelector('.fa-check');
 // done btn
 const done_click = document.querySelector('.don');
-
+// item text in list
+// const item_text = document.querySelector('.item');
 
 
 // multiple events
@@ -31,6 +32,7 @@ const done_click = document.querySelector('.don');
             if (in_text.length > 0) {
                 list.innerHTML += `<div class="list">
                 <div class="item">${in_text}</div>
+                <button class="edit" data-action="edit"></button>
                 <button class="don" data-action="done"></button>
                 <button class="del" data-action="delete"></button>
                 </div>`
@@ -54,6 +56,14 @@ list.addEventListener('click', function (e) {
     } else if (e.target.dataset.action === 'done') {
         const list_item = e.target.closest('.list').querySelector('.item');
         list_item.classList.add("don_line")
+        list_item.style.color = "darkgray";
+    } else if (e.target.dataset.action === 'edit') {
+        const mission = e.target.closest('.list');
+        mission.remove();
+        // this item changing
+        const item_text = e.target.closest('.list').querySelector('.item');
+        input.value = item_text.innerHTML
+        input.focus();
     }
 });
 

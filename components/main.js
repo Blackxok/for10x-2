@@ -7,6 +7,8 @@ const ico = document.querySelector('#ico');
 const lines_icon = document.querySelector('.lines');
 const file_icon = document.querySelector('.file');
 const chek = document.querySelector('.fa-check');
+// done btn
+const done_click = document.querySelector('.don');
 
 
 
@@ -19,7 +21,6 @@ const chek = document.querySelector('.fa-check');
         if (list.children.length > 3) {
             lines_icon.style.display = "block";
             file_icon.style.display = "none";
-            console.log(list.children);
         } else if (list.children.length === 3) {
             lines_icon.style.display = "none";
             file_icon.style.display = "block";
@@ -27,11 +28,13 @@ const chek = document.querySelector('.fa-check');
         // -------------------------------------------
         const in_text = input.value;
         if (e.keyCode === 13 || e.target.className === 'add_b') {
-            list.innerHTML += `<div class="list">
-            <div class="item">${in_text}</div>
-            <button class="don" data-action="done"></button>
-            <button class="del" data-action="delete">del</button>
+            if (in_text.length > 0) {
+                list.innerHTML += `<div class="list">
+                <div class="item">${in_text}</div>
+                <button class="don" data-action="done"></button>
+                <button class="del" data-action="delete"></button>
                 </div>`
+            }
             input.value = '';
             input.focus();
         } else if (e.target.className === 'clear_b') {
@@ -48,6 +51,9 @@ list.addEventListener('click', function (e) {
     if (e.target.dataset.action === 'delete') {
         const mission = e.target.closest('.list');
         mission.remove();
+    } else if (e.target.dataset.action === 'done') {
+        const list_item = e.target.closest('.list').querySelector('.item');
+        list_item.classList.add("don_line")
     }
 });
 

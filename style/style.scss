@@ -107,6 +107,8 @@
     font-size: 20px;
     color: var(--red);
     cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 .del::after {
@@ -114,8 +116,8 @@
     display: block;
     text-align: center;
     margin: auto;
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
 }
 
 .form {
@@ -162,4 +164,15 @@
     margin: 5px 10px;
     color: var(--red);
     cursor: pointer;
+}
+
+.don_line::after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--passive);
+    text-align: start;
+    transform: translateY(-10px);
 }
